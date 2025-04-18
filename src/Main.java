@@ -2,14 +2,19 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        //inizializzo le variabili da usare nel main
+        Utente u = new Utente();
+        Bacheca b = new Bacheca();
+        ToDo t = new ToDo();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        u.credenziali();
+        System.out.println("Ciao! " +u.getNome());
+        System.out.println("la password e': " +u.getPassword());
+       //chiamo i metodi
+
+        b.creaDescrizioneB();
+        t.creaDescrizioneT();
+        t.creaTitolo();
+
     }
 }
