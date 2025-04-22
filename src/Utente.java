@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -8,30 +9,49 @@ public class Utente {
     private List<Bacheca> bacheche;
     private List<ToDo> todo;
 
-    /*questo è il costruttore, serve poi per poter usare le classi nel main?*/
-    public Utente() {
-        this.nome = nome;
-        this.password = password;
-        this.bacheche = bacheche; /*inizializza l'attributo bacheche*/      //oppure inizializzate a null? Serve una lista di bacheche vuota per l'utente
-        this.todo = todo; /*inizializza l'attributo to do*/
+    public Utente(String name, String pass){
+        this.nome = name;
+        this.password = pass;
+        this.bacheche = new ArrayList<Bacheca>();
+        this.todo = new ArrayList<ToDo>();
+    }
+    public Utente(){
+
     }
 
 
     /*metodi di utente:*/
     /*questi sono tutti metodi che restituiscono i valori degli oggetti e delle liste degli oggetti*/
-    public String getNome() {
-        return nome;
-    }
-    public String getPassword() {
-        return password;
-    }
+    public String getNome() { return nome; }
+    public String getPassword() { return password; }
     public List<Bacheca> getBacheche() {    /*necessarie perché servono per "chiamare" gli attributi di una classe privata in altre classi*/
         return bacheche;
     }
 
-    public List<ToDo> getTodo() {
-        return todo;
+    public List<ToDo> getTodo() { return todo; }
+
+    public void setNome(String nome){
+        if(nome == null){
+            return;
+        }
+        if(nome.length()<=5){
+            System.out.println("Nome non valido");
+            return;
+        }
+        this.nome = nome;
     }
+    public void setPassword(String password){
+        if(password == null){
+            return;
+        }
+        if(password.length()<=16){
+            System.out.println("Password troppo corta");
+        }
+        this.password = password;
+    }
+    public void setBacheche(List<Bacheca> bacheche){ this.bacheche = bacheche; }
+
+    public void setTodo(List<ToDo> todo) { this.todo = todo; }
 
     /*bisogna ora implementare i metodi per prendere le credenziali, confrontarle, creare to do, spostarli e modificarli e infine per condividere le bacheche*/
     public String credenziali() {
