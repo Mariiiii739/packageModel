@@ -1,7 +1,8 @@
+import javax.swing.*;
 import java.util.Scanner;
 import java.util.List;
 
-public class Bacheca {
+public class Bacheca extends JFrame {
     public enum TitoloB{
         UNIVERSITA,
         LAVORO,

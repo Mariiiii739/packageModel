@@ -1,9 +1,10 @@
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Utente {
+public class Utente extends JFrame {
     private String nome;
     private String password;
     private List<Bacheca> bacheche;
@@ -14,6 +15,8 @@ public class Utente {
         this.password = pass;
         this.bacheche = new ArrayList<Bacheca>();
         this.todo = new ArrayList<ToDo>();
+
+
     }
     public Utente(){
 

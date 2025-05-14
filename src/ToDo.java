@@ -1,10 +1,11 @@
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 import java.util.List;
 
 
-public class ToDo {
+public class ToDo extends JFrame {
 /*attributi di to do:*/
   public enum Scadenza{                             /*un altro modo per implementare scadenza puo essere fatto tramite il tipo 'date' e poi tramite un metodo di tipo Boolean verificare se è scaduto o no.*/
       SCADUTO,
