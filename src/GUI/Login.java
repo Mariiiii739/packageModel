@@ -10,7 +10,7 @@ public class Login extends JFrame {
     private JPanel login;
 
     public Login() {
-        setContentPane(panel);
+        setContentPane(login);
         setLocationRelativeTo(null);
         JFrame frame = new JFrame("");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
