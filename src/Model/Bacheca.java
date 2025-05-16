@@ -1,3 +1,5 @@
+package Model;
+
 import javax.swing.*;
 import java.util.Scanner;
 import java.util.List;
@@ -24,7 +26,7 @@ public class Bacheca extends JFrame {
         //costruttore vuoto
     }
 
-    /*Ora bisogna implementare i vari 'get' per poter usare gli attributi di Bacheca nelle altre classi:*/
+    /*Ora bisogna implementare i vari 'get' per poter usare gli attributi di Model.Bacheca nelle altre classi:*/
     public String getDescrizione() { return descrizione; }
     public Utente getUtente(){ return utente; }
     public List<ToDo> getTodos(){ return todos; }

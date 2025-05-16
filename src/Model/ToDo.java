@@ -1,5 +1,6 @@
+package Model;
+
 import javax.swing.*;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 import java.util.List;

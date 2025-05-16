@@ -1,6 +1,8 @@
+package GUI;
+
 import javax.swing.*;
 
-public class Login {
+public class Login extends JFrame {
     private JPanel panel;
     private JTextField textField1;
     private JPasswordField passwordField1;
@@ -8,10 +10,12 @@ public class Login {
     private JPanel login;
 
     public Login() {
+        setContentPane(panel);
+        setLocationRelativeTo(null);
         JFrame frame = new JFrame("");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
-        frame.pack();
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
+        pack();
     }
 
 }
