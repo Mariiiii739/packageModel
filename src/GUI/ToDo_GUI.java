@@ -15,7 +15,7 @@ public class ToDo_GUI extends JFrame {
         JFrame frame = new JFrame("");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(800, 600);
-        setVisible(true);
+        //setVisible(true);
         pack();
 
     }

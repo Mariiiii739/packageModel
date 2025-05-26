@@ -11,7 +11,7 @@ public class BachecaTempoLibero extends JFrame {
         //JFrame frame = new JFrame("");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(400, 300);
-        setVisible(true);
+        //setVisible(true);
         pack();
     }
 }

@@ -11,7 +11,7 @@ public class BachecaLavoro extends JFrame {
         JFrame frame = new JFrame("");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(500, 500);
-        setVisible(true);
+        //setVisible(true);
         pack();
     }
 }
