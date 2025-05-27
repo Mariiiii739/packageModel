@@ -1,5 +1,8 @@
 package GUI;
 
+import Controller.Controller;
+import Model.Bacheca;
+
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -9,35 +12,32 @@ public class Home extends JFrame{
     private JLabel SpaziLavoro;
     private JList listaBacheche;
     private JPanel home;
+    Controller controller;
+    JFrame frameChiamante;
+    JFrame frame;
 
-    public Home() {
+    public Home(JFrame frameChiamante, Controller controller) {
         setContentPane(home);
         setLocationRelativeTo(null);
-        JFrame frame = new JFrame("");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(800, 600);
-        //setVisible(true);
+        setVisible(true);
         pack();
+        this.frameChiamante = frameChiamante;
+        this.controller = controller;
+        frame=new JFrame();
+        frame=this;
 
-        //li apre tutti e tre contemporaneamente
         listaBacheche.addMouseListener(new MouseAdapter() {
             public void mousePressed(MouseEvent e) {
-                BachecaLavoro job = new BachecaLavoro();
-                job.setVisible(true);
+                String bachecaSelezionata = listaBacheche.getSelectedValue().toString();
+                Bacheca.TitoloB titoloB;
+                if(bachecaSelezionata.equals("Lavoro")) titoloB = Bacheca.TitoloB.LAVORO;
+                else if(bachecaSelezionata.equals("Tempo Libero")) titoloB = Bacheca.TitoloB.TEMPO_LIBERO;
+                else titoloB = Bacheca.TitoloB.UNIVERSITA;
+               ToDoGui todo = new ToDoGui(frameChiamante, controller, titoloB);
+                setVisible(false);
             }
         });
-        listaBacheche.addMouseListener(new MouseAdapter() {
-            public void mousePressed(MouseEvent e) {
-                BachecaUni uni = new BachecaUni();
-                uni.setVisible(true);
-            }
-        });
-        listaBacheche.addMouseListener(new MouseAdapter() {
-            public void mousePressed(MouseEvent e) {
-                BachecaTempoLibero tempo = new BachecaTempoLibero();
-                tempo.setVisible(true);
-            }
-        });
-
     }
 }

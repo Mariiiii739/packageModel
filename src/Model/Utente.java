@@ -15,7 +15,11 @@ public class Utente extends JFrame {
         this.nome = name;
         this.password = pass;
         this.bacheche = new ArrayList<Bacheca>();
+        bacheche.add(new Bacheca(this, "Bacheca del lavoro", Bacheca.TitoloB.LAVORO));
+        bacheche.add(new Bacheca(this, "Bacheca del tempo libero", Bacheca.TitoloB.TEMPO_LIBERO));
+        bacheche.add(new Bacheca(this, "Bacheca dell'universita", Bacheca.TitoloB.UNIVERSITA));
         this.todo = new ArrayList<ToDo>();
+
 
 
     }

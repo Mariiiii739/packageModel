@@ -5,7 +5,9 @@
     <constraints>
       <xy x="20" y="20" width="902" height="715"/>
     </constraints>
-    <properties/>
+    <properties>
+      <foreground color="-1768018"/>
+    </properties>
     <border type="none"/>
     <children>
       <hspacer id="44e7e">
@@ -18,6 +20,8 @@
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font size="24"/>
+          <foreground color="-1768018"/>
           <text value="I tuoi spazi di lavoro"/>
         </properties>
       </component>
@@ -27,7 +31,9 @@
             <preferred-size width="-1" height="20"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <foreground color="-12196480"/>
+        </properties>
         <border type="none"/>
         <children/>
       </toolbar>
@@ -38,6 +44,7 @@
           </grid>
         </constraints>
         <properties>
+          <font size="14"/>
           <model>
             <item value="Lavoro"/>
             <item value="Tempo Libero"/>
@@ -49,7 +56,9 @@
         <constraints>
           <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <foreground color="-12196480"/>
+        </properties>
         <border type="none"/>
         <children/>
       </scrollpane>

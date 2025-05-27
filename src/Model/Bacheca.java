@@ -1,8 +1,9 @@
 package Model;
 
 import javax.swing.*;
-import java.util.Scanner;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Bacheca extends JFrame {
     public enum TitoloB{
@@ -17,14 +18,16 @@ public class Bacheca extends JFrame {
 
     /*Bisogna implementare il costruttore:*/
     public Bacheca(Utente utente, String descrizione, TitoloB titolo) {
-        this.utente = new Utente();
         this.utente = utente;
         this.descrizione = descrizione;
         this.titolo = titolo;
+        this.todos = new ArrayList<>();
     }
     public Bacheca(){
         //costruttore vuoto
     }
+
+    public void aggiungiToDo(ToDo todo) { todos.add(todo); }
 
     /*Ora bisogna implementare i vari 'get' per poter usare gli attributi di Model.Bacheca nelle altre classi:*/
     public String getDescrizione() { return descrizione; }

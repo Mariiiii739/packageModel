@@ -30,7 +30,11 @@ public class ToDo extends JFrame {
     public ToDo(){
 
     }
-    public ToDo(String descrizione, String titolo, Scadenza scadenza, Date data){
+    public ToDo(String descrizione, String titolo, String url, Utente autore){
+        this.descrizione = descrizione;
+        this.titolo = titolo;
+        this.url = url;
+        this.autore = autore;
     }
 
     /*Ora bisogna implementare i vari 'get' per poter usare gli attributi di To Do nelle altre classi:*/

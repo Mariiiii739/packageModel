@@ -1,4 +1,4 @@
-package Model;
+/*package Model;
 import GUI.*;
 import javax.swing.*;
 
@@ -17,9 +17,9 @@ public class Main {
 
         b.creaDescrizioneB();
         t.creaDescrizioneT();
-        t.creaTitolo();*/
+        t.creaTitolo();
 
-        Login l = new Login();
+        //Login l = new Login();
         Home h = new Home();
         BachecaTempoLibero bt = new BachecaTempoLibero();
         BachecaLavoro bl = new BachecaLavoro();
@@ -29,8 +29,8 @@ public class Main {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 new Registrazione();
-                new Login();
+               // new Login();
             }
         });
     }
-}
+}*/

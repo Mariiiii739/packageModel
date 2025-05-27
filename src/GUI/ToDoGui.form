@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.ToDoGui">
+  <grid id="27dc6" binding="todoList" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-201985"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <scrollpane id="e36f5">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="689db" class="javax.swing.JList" binding="list1" default-binding="true">
+            <constraints/>
+            <properties>
+              <background color="-13395892"/>
+              <model/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="db5c3" class="javax.swing.JLabel" binding="nomeLista">
+        <constraints border-constraint="North"/>
+        <properties>
+          <font size="22"/>
+          <foreground color="-1735215"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="lista dei todo"/>
+        </properties>
+      </component>
+      <component id="6dcb8" class="javax.swing.JButton" binding="aggiungiToDoButton" default-binding="true">
+        <constraints border-constraint="South"/>
+        <properties>
+          <foreground color="-1735215"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Aggiungi To Do"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
